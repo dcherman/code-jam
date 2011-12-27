@@ -1,4 +1,4 @@
-var numTestCases, input,
+var numTestCases, input, i,
 	fs = require('fs'),
 	filepath = process.argv[2];
 
@@ -9,7 +9,7 @@ if ( !filepath ) {
 input = fs.readFileSync( filepath, 'utf8' ).split('\n');
 numTestCases = parseInt( input.shift(), 10 );
 
-function getResults( case ) {
+function getResults( testcase ) {
 	var results;
 
 
